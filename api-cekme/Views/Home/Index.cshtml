@@ -1,0 +1,47 @@
+﻿@model kurmodel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<table class="table">
+    <thead>
+    <tr>
+        
+        <th>Döviz</th>
+        <th>Alış</th>
+        <th>Satış</th>
+       
+    </tr>
+    </thead>
+    
+          
+    <tr>
+        <td>USD</td>
+        <td>@Model.USD.alis</td>
+        <td>@Model.USD.satis</td>
+    </tr>
+    <tr>
+             <td>EURO</td>
+             <td>@Model.EUR.alis</td>
+        <td>@Model.EUR.satis</td>
+    </tr>
+    <tr>
+             <td>GBP</td>
+        <td>@Model.GBP.alis</td>
+        <td>@Model.GBP.satis</td>
+    </tr>
+    <tr>
+            <td>BTC</td>
+        <td>@Model.BTC.alis</td>
+        <td>@Model.BTC.satis</td>
+    </tr>
+    <tr>
+            <td>ETH</td>
+        <td>@Model.ETH.alis</td>
+        <td>@Model.ETH.satis</td>
+    </tr>
+   
+        
+    
+</table>
